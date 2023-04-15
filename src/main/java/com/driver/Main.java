@@ -3,8 +3,8 @@ package com.driver;
 
 public class Main {
     public static void main(String[] args) {
-        Main m= new Main();
-        Main.Product p = m.new Product();
+
+        Product p=new Product();
         int a = p.product(5, 6);
 
         int b = p.product(1, 2, 3);
@@ -13,7 +13,7 @@ public class Main {
         System.out.print(a+" "+b+" "+c);
     }
 
-    public class Product {
+    public static class Product {
 
         public int product(int x, int y) {
             return x*y;
@@ -28,6 +28,7 @@ public class Main {
         }
 
     }
+
 }
 
 
